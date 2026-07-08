@@ -247,48 +247,6 @@ The raw corpora can be rebuilt with the dataset-preparation workflow in `experim
 
 ---
 
-## 🧩 Phase Log Template for Future Work
-
-Use this same template for later project stages so each phase stays easy to separate.
-
-```markdown
-## Phase N: Short Phase Title
-
-### Goal
-- What this phase is trying to answer.
-
-### Scope
-- Datasets:
-- Models:
-- Attack variants:
-- Defense variants:
-- Metrics:
-
-### What Was Done
-- Bullet 1
-- Bullet 2
-- Bullet 3
-
-### Main Results
-| Result | Evidence |
-| --- | --- |
-| Finding 1 | Table or figure path |
-
-### Key Takeaways
-- Takeaway 1
-- Takeaway 2
-
-### Limitations
-- Limitation 1
-- Limitation 2
-
-### Next Phase
-- Next task 1
-- Next task 2
-```
-
----
-
 ## 🔮 Suggested Phase 2 Directions
 
 - Scale from 50-query samples to larger query sets.
