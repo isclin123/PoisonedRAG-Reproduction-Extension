@@ -156,9 +156,9 @@ In corpus-level experiments, `mistral:7b` was much more vulnerable than the othe
 
 This section summarizes how Phase 1 maps to the original research task and what should come next.
 
-### 1. Advisor-requested tasks
+### 1. Basic tasks
 
-| Requested item | Phase 1 status | Notes |
+| Tasks | Phase 1 status | Notes |
 | --- | --- | --- |
 | Read PoisonedRAG | Completed | Reading notes and reproduction-oriented summaries were prepared locally. |
 | Read the prior poster work | Completed | The motivation around knowledge corruption in RAG was incorporated into the project framing. |
