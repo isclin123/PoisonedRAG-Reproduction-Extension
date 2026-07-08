@@ -1,3 +1,63 @@
+Mixed-License Notice
+====================
+
+This repository is a Phase 1 research reproduction package. It contains a
+mixture of original experiment materials, adapted code, and third-party code.
+The repository as a whole should not be treated as being under a single
+permissive license.
+
+Summary
+-------
+
+1. PoisonedRAG-derived code
+
+   Portions of this repository are adapted from PoisonedRAG:
+
+   https://github.com/sleeepeer/PoisonedRAG
+
+   PoisonedRAG is distributed under the MIT License. The original MIT notice is
+   preserved below.
+
+2. Contriever-derived code
+
+   Files under:
+
+   experiments/src/contriever_src/
+
+   include code derived from the Contriever project:
+
+   https://github.com/facebookresearch/contriever
+
+   Contriever is distributed under Creative Commons Attribution-NonCommercial
+   4.0 International (CC BY-NC 4.0). This means those components are limited to
+   non-commercial use unless separate permission is obtained from the relevant
+   rights holder.
+
+   License URI:
+   https://creativecommons.org/licenses/by-nc/4.0/legalcode
+
+3. Other embedded notices
+
+   Some individual files include their own copyright or license notices in file
+   headers. Those notices remain in effect for those files.
+
+4. New Phase 1 materials
+
+   The Phase 1 experiment scripts, result tables, figures, and reports created
+   for this reproduction package are provided for academic and research use.
+   They do not relicense any third-party material included in this repository.
+
+Practical Implication
+---------------------
+
+Academic reading, reproduction, and non-commercial research use are the intended
+uses for this repository. Commercial reuse of the complete repository may be
+restricted because of the Contriever-derived components.
+
+
+PoisonedRAG MIT License Notice
+==============================
+
 MIT License
 
 Copyright (c) 2024 Runpeng Geng
@@ -19,3 +79,4 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+

@@ -208,6 +208,23 @@ To rebuild full experiments, first prepare the required BEIR datasets locally. R
 
 ---
 
+## ⚖️ License and Attribution
+
+This repository is a **mixed-license research artifact**, not a single-license codebase.
+
+- PoisonedRAG-derived code is under the MIT License from the original PoisonedRAG project.
+- Contriever-derived code under `experiments/src/contriever_src/` follows the Contriever license, Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0).
+- Phase 1 experiment outputs and reports are provided for academic and research use and do not relicense third-party components.
+
+Please read:
+
+- `LICENSE`
+- `THIRD_PARTY_NOTICES.md`
+
+The practical takeaway is simple: this repository is intended for academic reading, reproduction, and non-commercial research. Commercial reuse of the complete repository may be restricted because of the Contriever-derived components.
+
+---
+
 ## 📦 Data Policy
 
 This public repository includes:
@@ -285,4 +302,3 @@ Use this same template for later project stages so each phase stays easy to sepa
 ## 🙌 Acknowledgment
 
 This work builds on the PoisonedRAG research direction and uses a local reproduction setup to study low-rate poisoning under mostly clean-corpus assumptions.
-
