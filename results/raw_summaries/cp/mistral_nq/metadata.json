@@ -1,0 +1,26 @@
+{
+  "created_at": "20260707-230722",
+  "dataset": "nq",
+  "split": "test",
+  "eval_model_code": "contriever",
+  "llm_config": "model_configs/ollama_mistral_7b_config.json",
+  "sample_count": 50,
+  "top_k": 5,
+  "max_poison": 5,
+  "rates": [
+    0.01,
+    0.03,
+    0.05,
+    0.1
+  ],
+  "variants": [
+    "original",
+    "authority",
+    "instruction_aware",
+    "query_first_instruction_aware"
+  ],
+  "score_function": "dot",
+  "max_context_chars": 900,
+  "resume": true,
+  "poison_rate_definition": "n_poison / (n_poison + n_benign) in the candidate pool before top-k prompt selection"
+}

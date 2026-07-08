@@ -1,0 +1,10 @@
+condition,variant,requested_corpus_poison_rate,requested_corpus_poison_rate_percent,actual_corpus_poison_rate,actual_corpus_poison_rate_percent,corpus_size,n_poison,n,asr,correct_answer_rate,retrieval_success_rate,avg_poison_in_topk,avg_poison_topk_share
+clean,clean,0.0,0.0,0.0,0.0,2681468,0,50,0.0,0.46,0.0,0.0,0.0
+original_corpus_0.0001%,original,1e-06,9.999999999999999e-05,1.1187901552433225e-06,0.00011187901552433224,2681468,3,50,0.76,0.06,1.0,2.94,0.5880000000000005
+query_first_instruction_aware_corpus_0.0001%,query_first_instruction_aware,1e-06,9.999999999999999e-05,1.1187901552433225e-06,0.00011187901552433224,2681468,3,50,0.08,0.36,0.86,2.48,0.4960000000000002
+original_corpus_0.0005%,original,5e-06,0.0005,4.848090672721066e-06,0.0004848090672721066,2681468,13,50,0.82,0.04,1.0,4.98,0.996
+query_first_instruction_aware_corpus_0.0005%,query_first_instruction_aware,5e-06,0.0005,4.848090672721066e-06,0.0004848090672721066,2681468,13,50,0.12,0.18,0.9,4.28,0.856
+original_corpus_0.0010%,original,1e-05,0.001,1.0069111397189897e-05,0.0010069111397189897,2681468,27,50,0.8,0.06,1.0,5.0,1.0
+query_first_instruction_aware_corpus_0.0010%,query_first_instruction_aware,1e-05,0.001,1.0069111397189897e-05,0.0010069111397189897,2681468,27,50,0.16,0.1,0.9,4.42,0.884
+original_corpus_0.0050%,original,5e-05,0.005,4.997262693420172e-05,0.004997262693420172,2681468,134,50,0.84,0.06,1.0,5.0,1.0
+query_first_instruction_aware_corpus_0.0050%,query_first_instruction_aware,5e-05,0.005,4.997262693420172e-05,0.004997262693420172,2681468,134,50,0.14,0.14,0.9,4.42,0.884

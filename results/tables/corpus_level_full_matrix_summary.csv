@@ -1,0 +1,82 @@
+﻿condition,variant,requested_corpus_poison_rate,requested_corpus_poison_rate_percent,actual_corpus_poison_rate,actual_corpus_poison_rate_percent,corpus_size,n_poison,n,asr,correct_answer_rate,retrieval_success_rate,avg_poison_in_topk,avg_poison_topk_share,dataset,dataset_label,model_code,model_label,generation_profile,variant_label,is_clean
+clean,clean,0.0,0.0,0.0,0.0,2681468,0,50,0.0,0.46,0.0,0.0,0.0,nq,NQ,qwen35,qwen3.5:9b,ultrafast,clean,True
+original_corpus_0.0001%,original,1e-06,0.0001,1.1187901552433225e-06,0.0001118790155243,2681468,3,50,0.76,0.06,1.0,2.94,0.5880000000000005,nq,NQ,qwen35,qwen3.5:9b,ultrafast,original,False
+query_first_instruction_aware_corpus_0.0001%,query_first_instruction_aware,1e-06,0.0001,1.1187901552433225e-06,0.0001118790155243,2681468,3,50,0.08,0.36,0.86,2.48,0.4960000000000002,nq,NQ,qwen35,qwen3.5:9b,ultrafast,query-first,False
+original_corpus_0.0005%,original,5e-06,0.0005,4.848090672721066e-06,0.0004848090672721,2681468,13,50,0.82,0.04,1.0,4.98,0.996,nq,NQ,qwen35,qwen3.5:9b,ultrafast,original,False
+query_first_instruction_aware_corpus_0.0005%,query_first_instruction_aware,5e-06,0.0005,4.848090672721066e-06,0.0004848090672721,2681468,13,50,0.12,0.18,0.9,4.28,0.856,nq,NQ,qwen35,qwen3.5:9b,ultrafast,query-first,False
+original_corpus_0.0010%,original,1e-05,0.001,1.0069111397189897e-05,0.0010069111397189,2681468,27,50,0.8,0.06,1.0,5.0,1.0,nq,NQ,qwen35,qwen3.5:9b,ultrafast,original,False
+query_first_instruction_aware_corpus_0.0010%,query_first_instruction_aware,1e-05,0.001,1.0069111397189897e-05,0.0010069111397189,2681468,27,50,0.16,0.1,0.9,4.42,0.884,nq,NQ,qwen35,qwen3.5:9b,ultrafast,query-first,False
+original_corpus_0.0050%,original,5e-05,0.005,4.997262693420172e-05,0.0049972626934201,2681468,134,50,0.84,0.06,1.0,5.0,1.0,nq,NQ,qwen35,qwen3.5:9b,ultrafast,original,False
+query_first_instruction_aware_corpus_0.0050%,query_first_instruction_aware,5e-05,0.005,4.997262693420172e-05,0.0049972626934201,2681468,134,50,0.14,0.14,0.9,4.42,0.884,nq,NQ,qwen35,qwen3.5:9b,ultrafast,query-first,False
+clean,clean,0.0,0.0,0.0,0.0,2681468,0,50,0.0,0.56,0.0,0.0,0.0,nq,NQ,llama31_8b,llama3.1:8b,ultrafast,clean,True
+original_corpus_0.0001%,original,1e-06,0.0001,1.1187901552433225e-06,0.0001118790155243,2681468,3,50,0.84,0.18,1.0,2.94,0.5880000000000005,nq,NQ,llama31_8b,llama3.1:8b,ultrafast,original,False
+query_first_instruction_aware_corpus_0.0001%,query_first_instruction_aware,1e-06,0.0001,1.1187901552433225e-06,0.0001118790155243,2681468,3,50,0.12,0.42,0.86,2.48,0.4960000000000002,nq,NQ,llama31_8b,llama3.1:8b,ultrafast,query-first,False
+original_corpus_0.0005%,original,5e-06,0.0005,4.848090672721066e-06,0.0004848090672721,2681468,13,50,0.96,0.06,1.0,4.98,0.996,nq,NQ,llama31_8b,llama3.1:8b,ultrafast,original,False
+query_first_instruction_aware_corpus_0.0005%,query_first_instruction_aware,5e-06,0.0005,4.848090672721066e-06,0.0004848090672721,2681468,13,50,0.16,0.2,0.9,4.28,0.856,nq,NQ,llama31_8b,llama3.1:8b,ultrafast,query-first,False
+original_corpus_0.0010%,original,1e-05,0.001,1.0069111397189897e-05,0.0010069111397189,2681468,27,50,0.82,0.08,1.0,5.0,1.0,nq,NQ,llama31_8b,llama3.1:8b,ultrafast,original,False
+query_first_instruction_aware_corpus_0.0010%,query_first_instruction_aware,1e-05,0.001,1.0069111397189897e-05,0.0010069111397189,2681468,27,50,0.08,0.28,0.9,4.42,0.884,nq,NQ,llama31_8b,llama3.1:8b,ultrafast,query-first,False
+original_corpus_0.0050%,original,5e-05,0.005,4.997262693420172e-05,0.0049972626934201,2681468,134,50,0.84,0.06,1.0,5.0,1.0,nq,NQ,llama31_8b,llama3.1:8b,ultrafast,original,False
+query_first_instruction_aware_corpus_0.0050%,query_first_instruction_aware,5e-05,0.005,4.997262693420172e-05,0.0049972626934201,2681468,134,50,0.08,0.28,0.9,4.42,0.884,nq,NQ,llama31_8b,llama3.1:8b,ultrafast,query-first,False
+clean,clean,0.0,0.0,0.0,0.0,2681468,0,50,0.02,0.54,0.0,0.0,0.0,nq,NQ,mistral_7b,mistral:7b,fast,clean,True
+original_corpus_0.0001%,original,1e-06,0.0001,1.1187901552433225e-06,0.0001118790155243,2681468,3,50,0.92,0.02,1.0,2.98,0.5960000000000005,nq,NQ,mistral_7b,mistral:7b,fast,original,False
+query_first_instruction_aware_corpus_0.0001%,query_first_instruction_aware,1e-06,0.0001,1.1187901552433225e-06,0.0001118790155243,2681468,3,50,0.9,0.06,0.94,2.76,0.5520000000000005,nq,NQ,mistral_7b,mistral:7b,fast,query-first,False
+original_corpus_0.0005%,original,5e-06,0.0005,4.848090672721066e-06,0.0004848090672721,2681468,13,50,0.98,0.02,1.0,4.98,0.996,nq,NQ,mistral_7b,mistral:7b,fast,original,False
+query_first_instruction_aware_corpus_0.0005%,query_first_instruction_aware,5e-06,0.0005,4.848090672721066e-06,0.0004848090672721,2681468,13,50,0.96,0.02,0.96,4.62,0.924,nq,NQ,mistral_7b,mistral:7b,fast,query-first,False
+original_corpus_0.0010%,original,1e-05,0.001,1.0069111397189897e-05,0.0010069111397189,2681468,27,50,0.96,0.0,1.0,5.0,1.0,nq,NQ,mistral_7b,mistral:7b,fast,original,False
+query_first_instruction_aware_corpus_0.0010%,query_first_instruction_aware,1e-05,0.001,1.0069111397189897e-05,0.0010069111397189,2681468,27,50,0.94,0.02,0.96,4.74,0.948,nq,NQ,mistral_7b,mistral:7b,fast,query-first,False
+original_corpus_0.0050%,original,5e-05,0.005,4.997262693420172e-05,0.0049972626934201,2681468,134,50,0.96,0.0,1.0,5.0,1.0,nq,NQ,mistral_7b,mistral:7b,fast,original,False
+query_first_instruction_aware_corpus_0.0050%,query_first_instruction_aware,5e-05,0.005,4.997262693420172e-05,0.0049972626934201,2681468,134,50,0.92,0.02,0.96,4.74,0.948,nq,NQ,mistral_7b,mistral:7b,fast,query-first,False
+clean,clean,0.0,0.0,0.0,0.0,5233329,0,50,0.06,0.46,0.0,0.0,0.0,hotpotqa,HotpotQA,qwen35,qwen3.5:9b,ultrafast,clean,True
+original_corpus_0.0001%,original,1e-06,0.0001,9.55414803846653e-07,9.55414803846653e-05,5233329,5,50,0.82,0.04,1.0,4.98,0.996,hotpotqa,HotpotQA,qwen35,qwen3.5:9b,ultrafast,original,False
+query_first_instruction_aware_corpus_0.0001%,query_first_instruction_aware,1e-06,0.0001,9.55414803846653e-07,9.55414803846653e-05,5233329,5,50,0.22,0.22,1.0,4.98,0.996,hotpotqa,HotpotQA,qwen35,qwen3.5:9b,ultrafast,query-first,False
+original_corpus_0.0005%,original,5e-06,0.0005,4.968156980002592e-06,0.0004968156980002,5233329,26,50,0.7,0.04,1.0,5.0,1.0,hotpotqa,HotpotQA,qwen35,qwen3.5:9b,ultrafast,original,False
+query_first_instruction_aware_corpus_0.0005%,query_first_instruction_aware,5e-06,0.0005,4.968156980002592e-06,0.0004968156980002,5233329,26,50,0.18,0.16,1.0,4.98,0.996,hotpotqa,HotpotQA,qwen35,qwen3.5:9b,ultrafast,query-first,False
+original_corpus_0.0010%,original,1e-05,0.001,9.936313960005185e-06,0.0009936313960005,5233329,52,50,0.7,0.02,1.0,5.0,1.0,hotpotqa,HotpotQA,qwen35,qwen3.5:9b,ultrafast,original,False
+query_first_instruction_aware_corpus_0.0010%,query_first_instruction_aware,1e-05,0.001,9.936313960005185e-06,0.0009936313960005,5233329,52,50,0.16,0.16,1.0,4.98,0.996,hotpotqa,HotpotQA,qwen35,qwen3.5:9b,ultrafast,query-first,False
+original_corpus_0.0050%,original,5e-05,0.005,5.006373572156463e-05,0.0050063735721564,5233329,262,50,0.72,0.02,1.0,5.0,1.0,hotpotqa,HotpotQA,qwen35,qwen3.5:9b,ultrafast,original,False
+query_first_instruction_aware_corpus_0.0050%,query_first_instruction_aware,5e-05,0.005,5.006373572156463e-05,0.0050063735721564,5233329,262,50,0.16,0.16,1.0,4.98,0.996,hotpotqa,HotpotQA,qwen35,qwen3.5:9b,ultrafast,query-first,False
+clean,clean,0.0,0.0,0.0,0.0,5233329,0,50,0.04,0.48,0.0,0.0,0.0,hotpotqa,HotpotQA,llama31_8b,llama3.1:8b,ultrafast,clean,True
+original_corpus_0.0001%,original,1e-06,0.0001,9.55414803846653e-07,9.55414803846653e-05,5233329,5,50,0.8,0.04,1.0,4.98,0.996,hotpotqa,HotpotQA,llama31_8b,llama3.1:8b,ultrafast,original,False
+query_first_instruction_aware_corpus_0.0001%,query_first_instruction_aware,1e-06,0.0001,9.55414803846653e-07,9.55414803846653e-05,5233329,5,50,0.28,0.3,1.0,4.98,0.996,hotpotqa,HotpotQA,llama31_8b,llama3.1:8b,ultrafast,query-first,False
+original_corpus_0.0005%,original,5e-06,0.0005,4.968156980002592e-06,0.0004968156980002,5233329,26,50,0.62,0.14,1.0,5.0,1.0,hotpotqa,HotpotQA,llama31_8b,llama3.1:8b,ultrafast,original,False
+query_first_instruction_aware_corpus_0.0005%,query_first_instruction_aware,5e-06,0.0005,4.968156980002592e-06,0.0004968156980002,5233329,26,50,0.24,0.3,1.0,4.98,0.996,hotpotqa,HotpotQA,llama31_8b,llama3.1:8b,ultrafast,query-first,False
+original_corpus_0.0010%,original,1e-05,0.001,9.936313960005185e-06,0.0009936313960005,5233329,52,50,0.64,0.14,1.0,5.0,1.0,hotpotqa,HotpotQA,llama31_8b,llama3.1:8b,ultrafast,original,False
+query_first_instruction_aware_corpus_0.0010%,query_first_instruction_aware,1e-05,0.001,9.936313960005185e-06,0.0009936313960005,5233329,52,50,0.26,0.26,1.0,4.98,0.996,hotpotqa,HotpotQA,llama31_8b,llama3.1:8b,ultrafast,query-first,False
+original_corpus_0.0050%,original,5e-05,0.005,5.006373572156463e-05,0.0050063735721564,5233329,262,50,0.58,0.2,1.0,5.0,1.0,hotpotqa,HotpotQA,llama31_8b,llama3.1:8b,ultrafast,original,False
+query_first_instruction_aware_corpus_0.0050%,query_first_instruction_aware,5e-05,0.005,5.006373572156463e-05,0.0050063735721564,5233329,262,50,0.26,0.34,1.0,4.98,0.996,hotpotqa,HotpotQA,llama31_8b,llama3.1:8b,ultrafast,query-first,False
+clean,clean,0.0,0.0,0.0,0.0,5233329,0,50,0.16,0.64,0.0,0.0,0.0,hotpotqa,HotpotQA,mistral_7b,mistral:7b,fast,clean,True
+original_corpus_0.0001%,original,1e-06,0.0001,9.55414803846653e-07,9.55414803846653e-05,5233329,5,50,0.98,0.0,1.0,4.98,0.996,hotpotqa,HotpotQA,mistral_7b,mistral:7b,fast,original,False
+query_first_instruction_aware_corpus_0.0001%,query_first_instruction_aware,1e-06,0.0001,9.55414803846653e-07,9.55414803846653e-05,5233329,5,50,1.0,0.0,1.0,4.98,0.996,hotpotqa,HotpotQA,mistral_7b,mistral:7b,fast,query-first,False
+original_corpus_0.0005%,original,5e-06,0.0005,4.968156980002592e-06,0.0004968156980002,5233329,26,50,1.0,0.02,1.0,5.0,1.0,hotpotqa,HotpotQA,mistral_7b,mistral:7b,fast,original,False
+query_first_instruction_aware_corpus_0.0005%,query_first_instruction_aware,5e-06,0.0005,4.968156980002592e-06,0.0004968156980002,5233329,26,50,0.98,0.04,1.0,4.98,0.996,hotpotqa,HotpotQA,mistral_7b,mistral:7b,fast,query-first,False
+original_corpus_0.0010%,original,1e-05,0.001,9.936313960005185e-06,0.0009936313960005,5233329,52,50,1.0,0.02,1.0,5.0,1.0,hotpotqa,HotpotQA,mistral_7b,mistral:7b,fast,original,False
+query_first_instruction_aware_corpus_0.0010%,query_first_instruction_aware,1e-05,0.001,9.936313960005185e-06,0.0009936313960005,5233329,52,50,0.98,0.04,1.0,4.98,0.996,hotpotqa,HotpotQA,mistral_7b,mistral:7b,fast,query-first,False
+original_corpus_0.0050%,original,5e-05,0.005,5.006373572156463e-05,0.0050063735721564,5233329,262,50,0.98,0.02,1.0,5.0,1.0,hotpotqa,HotpotQA,mistral_7b,mistral:7b,fast,original,False
+query_first_instruction_aware_corpus_0.0050%,query_first_instruction_aware,5e-05,0.005,5.006373572156463e-05,0.0050063735721564,5233329,262,50,0.98,0.04,1.0,4.98,0.996,hotpotqa,HotpotQA,mistral_7b,mistral:7b,fast,query-first,False
+clean,clean,0.0,0.0,0.0,0.0,8841823,0,50,0.04,0.56,0.0,0.0,0.0,msmarco,MS MARCO,qwen35,qwen3.5:9b,ultrafast,clean,True
+original_corpus_0.0001%,original,1e-06,0.0001,1.0178896365602428e-06,0.000101788963656,8841823,9,50,0.12,0.26,1.0,4.7,0.94,msmarco,MS MARCO,qwen35,qwen3.5:9b,ultrafast,original,False
+query_first_instruction_aware_corpus_0.0001%,query_first_instruction_aware,1e-06,0.0001,1.0178896365602428e-06,0.000101788963656,8841823,9,50,0.1,0.32,0.96,4.5,0.9,msmarco,MS MARCO,qwen35,qwen3.5:9b,ultrafast,query-first,False
+original_corpus_0.0005%,original,5e-06,0.0005,4.976349334294524e-06,0.0004976349334294,8841823,44,50,0.08,0.26,1.0,4.9,0.98,msmarco,MS MARCO,qwen35,qwen3.5:9b,ultrafast,original,False
+query_first_instruction_aware_corpus_0.0005%,query_first_instruction_aware,5e-06,0.0005,4.976349334294524e-06,0.0004976349334294,8841823,44,50,0.1,0.32,0.96,4.5,0.9,msmarco,MS MARCO,qwen35,qwen3.5:9b,ultrafast,query-first,False
+original_corpus_0.0010%,original,1e-05,0.001,9.952698668589048e-06,0.0009952698668589,8841823,88,50,0.06,0.26,1.0,4.9,0.98,msmarco,MS MARCO,qwen35,qwen3.5:9b,ultrafast,original,False
+query_first_instruction_aware_corpus_0.0010%,query_first_instruction_aware,1e-05,0.001,9.952698668589048e-06,0.0009952698668589,8841823,88,50,0.12,0.32,0.96,4.5,0.9,msmarco,MS MARCO,qwen35,qwen3.5:9b,ultrafast,query-first,False
+original_corpus_0.0050%,original,5e-05,0.005,4.998969103995861e-05,0.0049989691039958,8841823,442,50,0.08,0.26,1.0,4.9,0.98,msmarco,MS MARCO,qwen35,qwen3.5:9b,ultrafast,original,False
+query_first_instruction_aware_corpus_0.0050%,query_first_instruction_aware,5e-05,0.005,4.998969103995861e-05,0.0049989691039958,8841823,442,50,0.12,0.32,0.96,4.5,0.9,msmarco,MS MARCO,qwen35,qwen3.5:9b,ultrafast,query-first,False
+clean,clean,0.0,0.0,0.0,0.0,8841823,0,50,0.04,0.74,0.0,0.0,0.0,msmarco,MS MARCO,llama31_8b,llama3.1:8b,ultrafast,clean,True
+original_corpus_0.0001%,original,1e-06,0.0001,1.0178896365602428e-06,0.000101788963656,8841823,9,50,0.06,0.74,1.0,4.7,0.94,msmarco,MS MARCO,llama31_8b,llama3.1:8b,ultrafast,original,False
+query_first_instruction_aware_corpus_0.0001%,query_first_instruction_aware,1e-06,0.0001,1.0178896365602428e-06,0.000101788963656,8841823,9,50,0.04,0.68,0.96,4.5,0.9,msmarco,MS MARCO,llama31_8b,llama3.1:8b,ultrafast,query-first,False
+original_corpus_0.0005%,original,5e-06,0.0005,4.976349334294524e-06,0.0004976349334294,8841823,44,50,0.04,0.74,1.0,4.9,0.98,msmarco,MS MARCO,llama31_8b,llama3.1:8b,ultrafast,original,False
+query_first_instruction_aware_corpus_0.0005%,query_first_instruction_aware,5e-06,0.0005,4.976349334294524e-06,0.0004976349334294,8841823,44,50,0.04,0.66,0.96,4.5,0.9,msmarco,MS MARCO,llama31_8b,llama3.1:8b,ultrafast,query-first,False
+original_corpus_0.0010%,original,1e-05,0.001,9.952698668589048e-06,0.0009952698668589,8841823,88,50,0.04,0.72,1.0,4.9,0.98,msmarco,MS MARCO,llama31_8b,llama3.1:8b,ultrafast,original,False
+query_first_instruction_aware_corpus_0.0010%,query_first_instruction_aware,1e-05,0.001,9.952698668589048e-06,0.0009952698668589,8841823,88,50,0.04,0.7,0.96,4.5,0.9,msmarco,MS MARCO,llama31_8b,llama3.1:8b,ultrafast,query-first,False
+original_corpus_0.0050%,original,5e-05,0.005,4.998969103995861e-05,0.0049989691039958,8841823,442,50,0.04,0.76,1.0,4.9,0.98,msmarco,MS MARCO,llama31_8b,llama3.1:8b,ultrafast,original,False
+query_first_instruction_aware_corpus_0.0050%,query_first_instruction_aware,5e-05,0.005,4.998969103995861e-05,0.0049989691039958,8841823,442,50,0.06,0.7,0.96,4.5,0.9,msmarco,MS MARCO,llama31_8b,llama3.1:8b,ultrafast,query-first,False
+clean,clean,0.0,0.0,0.0,0.0,8841823,0,50,0.08,0.76,0.0,0.0,0.0,msmarco,MS MARCO,mistral_7b,mistral:7b,fast,clean,True
+original_corpus_0.0001%,original,1e-06,0.0001,1.0178896365602428e-06,0.000101788963656,8841823,9,50,0.98,0.0,1.0,4.82,0.9639999999999996,msmarco,MS MARCO,mistral_7b,mistral:7b,fast,original,False
+query_first_instruction_aware_corpus_0.0001%,query_first_instruction_aware,1e-06,0.0001,1.0178896365602428e-06,0.000101788963656,8841823,9,50,1.0,0.02,1.0,4.54,0.908,msmarco,MS MARCO,mistral_7b,mistral:7b,fast,query-first,False
+original_corpus_0.0005%,original,5e-06,0.0005,4.976349334294524e-06,0.0004976349334294,8841823,44,50,1.0,0.0,1.0,4.96,0.992,msmarco,MS MARCO,mistral_7b,mistral:7b,fast,original,False
+query_first_instruction_aware_corpus_0.0005%,query_first_instruction_aware,5e-06,0.0005,4.976349334294524e-06,0.0004976349334294,8841823,44,50,1.0,0.0,1.0,4.72,0.9439999999999996,msmarco,MS MARCO,mistral_7b,mistral:7b,fast,query-first,False
+original_corpus_0.0010%,original,1e-05,0.001,9.952698668589048e-06,0.0009952698668589,8841823,88,50,1.0,0.0,1.0,4.96,0.992,msmarco,MS MARCO,mistral_7b,mistral:7b,fast,original,False
+query_first_instruction_aware_corpus_0.0010%,query_first_instruction_aware,1e-05,0.001,9.952698668589048e-06,0.0009952698668589,8841823,88,50,1.0,0.0,1.0,4.72,0.9439999999999996,msmarco,MS MARCO,mistral_7b,mistral:7b,fast,query-first,False
+original_corpus_0.0050%,original,5e-05,0.005,4.998969103995861e-05,0.0049989691039958,8841823,442,50,1.0,0.0,1.0,4.96,0.992,msmarco,MS MARCO,mistral_7b,mistral:7b,fast,original,False
+query_first_instruction_aware_corpus_0.0050%,query_first_instruction_aware,5e-05,0.005,4.998969103995861e-05,0.0049989691039958,8841823,442,50,1.0,0.0,1.0,4.72,0.9439999999999996,msmarco,MS MARCO,mistral_7b,mistral:7b,fast,query-first,False

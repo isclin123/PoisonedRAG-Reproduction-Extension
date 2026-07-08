@@ -1,0 +1,652 @@
+﻿
+
+===== 2026-07-07T22:55:35 RUN =====
+C:\Users\isclin\miniconda3\python.exe main.py --eval_dataset hotpotqa --eval_model_code contriever --model_name ollama_llama3.1_8b --model_config_path model_configs/ollama_llama3.1_8b_config.json --top_k 5 --attack_method LM_targeted --adv_per_query 5 --score_function dot --repeat_times 10 --M 10 --query_results_dir paper_style_fullmatrix_2026-07-07 --name hotpotqa-contriever-ollama_llama3.1_8b-top5-adv5-M10x10
+Traceback (most recent call last):
+  File "C:\Users\isclin\Desktop\Summer Project\02_reproduction_code_data\PoisonedRAG_runnable_workspace\main.py", line 7, in <module>
+    from src.models import create_model
+  File "C:\Users\isclin\Desktop\Summer Project\02_reproduction_code_data\PoisonedRAG_runnable_workspace\src\models\__init__.py", line 1, in <module>
+    from .PaLM2 import PaLM2
+  File "C:\Users\isclin\Desktop\Summer Project\02_reproduction_code_data\PoisonedRAG_runnable_workspace\src\models\PaLM2.py", line 1, in <module>
+    import google.generativeai as palm
+ModuleNotFoundError: No module named 'google.generativeai'
+
+
+===== 2026-07-08T00:41:04 RUN =====
+C:\Users\isclin\miniconda3\envs\PoisonedRAG\python.exe main.py --eval_dataset hotpotqa --eval_model_code contriever --model_name ollama_llama3.1_8b --model_config_path model_configs/ollama_llama3.1_8b_config.json --top_k 5 --attack_method LM_targeted --adv_per_query 5 --score_function dot --repeat_times 10 --M 10 --query_results_dir paper_style_fullmatrix_2026-07-07 --name hotpotqa-contriever-ollama_llama3.1_8b-top5-adv5-M10x10
+Namespace(eval_model_code='contriever', eval_dataset='hotpotqa', split='test', query_results_dir='paper_style_fullmatrix_2026-07-07', model_config_path='model_configs/ollama_llama3.1_8b_config.json', model_name='ollama_llama3.1_8b', top_k=5, use_truth='False', gpu_id=0, attack_method='LM_targeted', adv_per_query=5, score_function='dot', repeat_times=10, M=10, seed=12, name='hotpotqa-contriever-ollama_llama3.1_8b-top5-adv5-M10x10')
+C:\Users\isclin\Desktop\Summer Project\02_reproduction_code_data\PoisonedRAG_runnable_workspace\datasets\hotpotqa
+  0%|          | 0/5233329 [00:00<?, ?it/s]  0%|          | 21161/5233329 [00:00<00:24, 209706.28it/s]  1%|          | 45139/5233329 [00:00<00:22, 226545.62it/s]  1%|▏         | 74697/5233329 [00:00<00:20, 257248.01it/s]  2%|▏         | 100426/5233329 [00:00<00:20, 252980.94it/s]  2%|▏         | 125736/5233329 [00:00<00:20, 250392.56it/s]  3%|▎         | 150784/5233329 [00:00<00:20, 248211.38it/s]  3%|▎         | 175612/5233329 [00:00<00:20, 242522.49it/s]  4%|▍         | 199908/5233329 [00:00<00:20, 242459.33it/s]  4%|▍         | 224315/5233329 [00:00<00:20, 242451.85it/s]  5%|▍         | 249387/5233329 [00:01<00:20, 244963.60it/s]  5%|▌         | 273894/5233329 [00:01<00:20, 237541.91it/s]  6%|▌         | 297697/5233329 [00:01<00:21, 226155.17it/s]  6%|▌         | 320435/5233329 [00:01<00:22, 221091.51it/s]  7%|▋         | 342631/5233329 [00:01<00:22, 220862.03it/s]  7%|▋         | 364777/5233329 [00:01<00:23, 205063.91it/s]  7%|▋         | 385507/5233329 [00:01<00:23, 202416.52it/s]  8%|▊         | 408233/5233329 [00:01<00:23, 209336.56it/s]  8%|▊         | 429520/5233329 [00:01<00:22, 209767.24it/s]  9%|▊         | 450605/5233329 [00:01<00:23, 204843.96it/s]  9%|▉         | 472285/5233329 [00:02<00:22, 208062.55it/s]  9%|▉         | 494010/5233329 [00:02<00:22, 210695.13it/s] 10%|▉         | 515140/5233329 [00:02<00:22, 208495.99it/s] 10%|█         | 536033/5233329 [00:02<00:23, 203556.10it/s] 11%|█         | 556435/5233329 [00:02<00:24, 189836.02it/s] 11%|█         | 575607/5233329 [00:02<00:25, 186275.49it/s] 11%|█▏        | 594359/5233329 [00:02<00:25, 181542.85it/s] 12%|█▏        | 615388/5233329 [00:02<00:24, 189597.10it/s] 12%|█▏        | 639549/5233329 [00:02<00:22, 203947.85it/s] 13%|█▎        | 664056/5233329 [00:03<00:21, 215398.97it/s] 13%|█▎        | 687621/5233329 [00:03<00:20, 221126.41it/s] 14%|█▎        | 709843/5233329 [00:03<00:22, 197051.24it/s] 14%|█▍        | 731047/5233329 [00:03<00:22, 201086.73it/s] 14%|█▍        | 755791/5233329 [00:03<00:20, 213572.10it/s] 15%|█▍        | 781346/5233329 [00:03<00:19, 225526.51it/s] 15%|█▌        | 806322/5233329 [00:03<00:19, 232493.74it/s] 16%|█▌        | 829824/5233329 [00:03<00:18, 232599.80it/s] 16%|█▋        | 854956/5233329 [00:03<00:18, 237751.22it/s] 17%|█▋        | 879898/5233329 [00:04<00:18, 240493.57it/s] 17%|█▋        | 905409/5233329 [00:04<00:17, 244787.32it/s] 18%|█▊        | 930372/5233329 [00:04<00:17, 246108.73it/s] 18%|█▊        | 955695/5233329 [00:04<00:17, 248104.29it/s] 19%|█▊        | 980543/5233329 [00:04<00:17, 246331.65it/s] 19%|█▉        | 1005269/5233329 [00:04<00:17, 246033.72it/s] 20%|█▉        | 1031075/5233329 [00:04<00:16, 249463.10it/s] 20%|██        | 1057170/5233329 [00:04<00:16, 252864.70it/s] 21%|██        | 1082470/5233329 [00:04<00:16, 251706.35it/s] 21%|██        | 1107651/5233329 [00:04<00:16, 250512.45it/s] 22%|██▏       | 1132710/5233329 [00:05<00:16, 247840.64it/s] 22%|██▏       | 1157880/5233329 [00:05<00:16, 248598.25it/s] 23%|██▎       | 1182878/5233329 [00:05<00:16, 248989.93it/s] 23%|██▎       | 1208130/5233329 [00:05<00:16, 249383.50it/s] 24%|██▎       | 1233073/5233329 [00:05<00:16, 248462.57it/s] 24%|██▍       | 1257923/5233329 [00:05<00:16, 246199.01it/s] 25%|██▍       | 1282746/5233329 [00:05<00:16, 246738.14it/s] 25%|██▍       | 1307664/5233329 [00:05<00:15, 247447.80it/s] 25%|██▌       | 1332413/5233329 [00:05<00:16, 237006.10it/s] 26%|██▌       | 1356205/5233329 [00:05<00:16, 230097.71it/s] 26%|██▋       | 1379304/5233329 [00:06<00:17, 216805.11it/s] 27%|██▋       | 1401162/5233329 [00:06<00:24, 157333.05it/s] 27%|██▋       | 1419229/5233329 [00:06<00:24, 158393.32it/s] 28%|██▊       | 1441693/5233329 [00:06<00:21, 173714.98it/s] 28%|██▊       | 1464215/5233329 [00:06<00:20, 186426.94it/s] 28%|██▊       | 1484176/5233329 [00:06<00:20, 186512.99it/s] 29%|██▉       | 1505355/5233329 [00:06<00:19, 192935.32it/s] 29%|██▉       | 1529632/5233329 [00:06<00:17, 206330.21it/s] 30%|██▉       | 1552968/5233329 [00:07<00:17, 213741.36it/s] 30%|███       | 1576935/5233329 [00:07<00:16, 221042.06it/s] 31%|███       | 1601392/5233329 [00:07<00:15, 227550.71it/s] 31%|███       | 1626440/5233329 [00:07<00:15, 234258.11it/s] 32%|███▏      | 1652363/5233329 [00:07<00:14, 240805.14it/s] 32%|███▏      | 1677055/5233329 [00:07<00:14, 242597.23it/s] 33%|███▎      | 1703036/5233329 [00:07<00:14, 247078.22it/s] 33%|███▎      | 1728864/5233329 [00:07<00:14, 250032.22it/s] 34%|███▎      | 1754494/5233329 [00:07<00:13, 251527.04it/s] 34%|███▍      | 1779684/5233329 [00:07<00:13, 250725.10it/s] 34%|███▍      | 1804783/5233329 [00:08<00:13, 248107.70it/s] 35%|███▍      | 1829689/5233329 [00:08<00:13, 247888.36it/s] 35%|███▌      | 1854494/5233329 [00:08<00:13, 247566.18it/s] 36%|███▌      | 1879438/5233329 [00:08<00:13, 247995.08it/s] 36%|███▋      | 1905034/5233329 [00:08<00:13, 249995.47it/s] 37%|███▋      | 1930040/5233329 [00:08<00:13, 249652.61it/s] 37%|███▋      | 1956048/5233329 [00:08<00:13, 251983.74it/s] 38%|███▊      | 1982891/5233329 [00:08<00:12, 256328.64it/s] 38%|███▊      | 2008526/5233329 [00:08<00:12, 255797.87it/s] 39%|███▉      | 2034107/5233329 [00:08<00:12, 251323.66it/s] 39%|███▉      | 2059256/5233329 [00:09<00:12, 250409.80it/s] 40%|███▉      | 2084308/5233329 [00:09<00:12, 248990.28it/s] 40%|████      | 2109247/5233329 [00:09<00:12, 248805.52it/s] 41%|████      | 2134133/5233329 [00:09<00:12, 248207.83it/s] 41%|████▏     | 2158958/5233329 [00:09<00:12, 245900.82it/s] 42%|████▏     | 2183554/5233329 [00:09<00:12, 245917.89it/s] 42%|████▏     | 2208150/5233329 [00:09<00:12, 245497.75it/s] 43%|████▎     | 2232703/5233329 [00:09<00:12, 239232.28it/s] 43%|████▎     | 2256659/5233329 [00:09<00:12, 231516.67it/s] 44%|████▎     | 2281386/5233329 [00:09<00:12, 235400.50it/s] 44%|████▍     | 2304983/5233329 [00:10<00:12, 233021.62it/s] 44%|████▍     | 2328324/5233329 [00:10<00:13, 216450.33it/s] 45%|████▍     | 2350201/5233329 [00:10<00:13, 216865.45it/s] 45%|████▌     | 2372053/5233329 [00:10<00:13, 216433.34it/s] 46%|████▌     | 2394436/5233329 [00:10<00:12, 218415.98it/s] 46%|████▌     | 2417497/5233329 [00:10<00:12, 221951.69it/s] 47%|████▋     | 2439764/5233329 [00:10<00:12, 221665.43it/s] 47%|████▋     | 2461981/5233329 [00:10<00:12, 220514.57it/s] 47%|████▋     | 2484067/5233329 [00:10<00:13, 210728.87it/s] 48%|████▊     | 2508580/5233329 [00:11<00:12, 220416.59it/s] 48%|████▊     | 2534466/5233329 [00:11<00:11, 231484.18it/s] 49%|████▉     | 2559163/5233329 [00:11<00:11, 235399.90it/s] 49%|████▉     | 2582789/5233329 [00:11<00:11, 227962.10it/s] 50%|████▉     | 2605687/5233329 [00:11<00:11, 219224.29it/s] 50%|█████     | 2628505/5233329 [00:11<00:11, 221736.22it/s] 51%|█████     | 2654223/5233329 [00:11<00:11, 231478.20it/s] 51%|█████     | 2680078/5233329 [00:11<00:10, 238698.75it/s] 52%|█████▏    | 2705535/5233329 [00:11<00:10, 243251.29it/s] 52%|█████▏    | 2729931/5233329 [00:11<00:10, 243083.77it/s] 53%|█████▎    | 2754310/5233329 [00:12<00:10, 243146.94it/s] 53%|█████▎    | 2779627/5233329 [00:12<00:09, 246016.86it/s] 54%|█████▎    | 2804255/5233329 [00:12<00:13, 183059.22it/s] 54%|█████▍    | 2829658/5233329 [00:12<00:12, 200093.84it/s] 55%|█████▍    | 2855579/5233329 [00:12<00:11, 214945.28it/s] 55%|█████▌    | 2881750/5233329 [00:12<00:10, 227405.12it/s] 56%|█████▌    | 2907934/5233329 [00:12<00:09, 236554.98it/s] 56%|█████▌    | 2933561/5233329 [00:12<00:09, 241792.17it/s] 57%|█████▋    | 2960087/5233329 [00:12<00:09, 248088.33it/s] 57%|█████▋    | 2987701/5233329 [00:13<00:08, 255297.92it/s] 58%|█████▊    | 3013854/5233329 [00:13<00:08, 256533.68it/s] 58%|█████▊    | 3039968/5233329 [00:13<00:08, 257225.31it/s] 59%|█████▊    | 3066558/5233329 [00:13<00:08, 259164.73it/s] 59%|█████▉    | 3092615/5233329 [00:13<00:08, 254489.11it/s] 60%|█████▉    | 3118480/5233329 [00:13<00:08, 255701.50it/s] 60%|██████    | 3144133/5233329 [00:13<00:08, 254980.14it/s] 61%|██████    | 3169688/5233329 [00:13<00:08, 254066.28it/s] 61%|██████    | 3195135/5233329 [00:13<00:08, 253847.47it/s] 62%|██████▏   | 3220548/5233329 [00:13<00:07, 253902.34it/s] 62%|██████▏   | 3246629/5233329 [00:14<00:07, 255885.06it/s] 63%|██████▎   | 3272233/5233329 [00:14<00:07, 253589.01it/s] 63%|██████▎   | 3298001/5233329 [00:14<00:07, 254642.76it/s] 64%|██████▎   | 3323476/5233329 [00:14<00:07, 254294.02it/s] 64%|██████▍   | 3348913/5233329 [00:14<00:07, 253293.07it/s] 64%|██████▍   | 3374248/5233329 [00:14<00:07, 252078.93it/s] 65%|██████▍   | 3399461/5233329 [00:14<00:07, 251687.57it/s] 65%|██████▌   | 3424675/5233329 [00:14<00:07, 251281.67it/s] 66%|██████▌   | 3450627/5233329 [00:14<00:07, 253002.66it/s] 66%|██████▋   | 3476714/5233329 [00:14<00:06, 254962.13it/s] 67%|██████▋   | 3502774/5233329 [00:15<00:06, 255964.08it/s] 67%|██████▋   | 3528694/5233329 [00:15<00:06, 256815.15it/s] 68%|██████▊   | 3554748/5233329 [00:15<00:06, 257471.97it/s] 68%|██████▊   | 3580496/5233329 [00:15<00:06, 257088.48it/s] 69%|██████▉   | 3606206/5233329 [00:15<00:06, 255317.99it/s] 69%|██████▉   | 3632062/5233329 [00:15<00:06, 255738.83it/s] 70%|██████▉   | 3657750/5233329 [00:15<00:06, 255182.54it/s] 70%|███████   | 3683440/5233329 [00:15<00:06, 255298.02it/s] 71%|███████   | 3709086/5233329 [00:15<00:05, 255594.75it/s] 71%|███████▏  | 3735214/5233329 [00:16<00:05, 256929.80it/s] 72%|███████▏  | 3760908/5233329 [00:16<00:05, 256912.79it/s] 72%|███████▏  | 3786600/5233329 [00:16<00:05, 253606.91it/s] 73%|███████▎  | 3811970/5233329 [00:16<00:05, 252407.19it/s] 73%|███████▎  | 3837324/5233329 [00:16<00:05, 252208.88it/s] 74%|███████▍  | 3862550/5233329 [00:16<00:05, 250966.70it/s] 74%|███████▍  | 3887651/5233329 [00:16<00:05, 249581.03it/s] 75%|███████▍  | 3912787/5233329 [00:16<00:05, 249928.96it/s] 75%|███████▌  | 3938025/5233329 [00:16<00:05, 250551.15it/s] 76%|███████▌  | 3963900/5233329 [00:16<00:05, 252258.05it/s] 76%|███████▌  | 3989128/5233329 [00:17<00:04, 250483.59it/s] 77%|███████▋  | 4014180/5233329 [00:17<00:04, 249964.37it/s] 77%|███████▋  | 4039179/5233329 [00:17<00:04, 247688.53it/s] 78%|███████▊  | 4064204/5233329 [00:17<00:04, 247729.18it/s] 78%|███████▊  | 4088980/5233329 [00:17<00:04, 246903.09it/s] 79%|███████▊  | 4113673/5233329 [00:17<00:04, 246774.64it/s] 79%|███████▉  | 4138505/5233329 [00:17<00:04, 246854.07it/s] 80%|███████▉  | 4163192/5233329 [00:17<00:04, 245730.09it/s] 80%|████████  | 4187767/5233329 [00:17<00:04, 244504.76it/s] 80%|████████  | 4212587/5233329 [00:17<00:04, 244892.69it/s] 81%|████████  | 4237938/5233329 [00:18<00:04, 247023.81it/s] 81%|████████▏ | 4263232/5233329 [00:18<00:03, 248746.82it/s] 82%|████████▏ | 4289167/5233329 [00:18<00:03, 251221.31it/s] 82%|████████▏ | 4314506/5233329 [00:18<00:03, 251700.51it/s] 83%|████████▎ | 4339953/5233329 [00:18<00:03, 252281.02it/s] 83%|████████▎ | 4365727/5233329 [00:18<00:03, 252999.04it/s] 84%|████████▍ | 4391028/5233329 [00:18<00:03, 251768.85it/s] 84%|████████▍ | 4416826/5233329 [00:18<00:03, 253326.70it/s] 85%|████████▍ | 4442161/5233329 [00:18<00:03, 252641.08it/s] 85%|████████▌ | 4467603/5233329 [00:18<00:03, 252965.19it/s] 86%|████████▌ | 4493542/5233329 [00:19<00:02, 254614.09it/s] 86%|████████▋ | 4519005/5233329 [00:19<00:02, 254497.63it/s] 87%|████████▋ | 4544456/5233329 [00:19<00:02, 254204.70it/s] 87%|████████▋ | 4569877/5233329 [00:19<00:02, 252944.84it/s] 88%|████████▊ | 4595173/5233329 [00:19<00:02, 250567.22it/s] 88%|████████▊ | 4620235/5233329 [00:19<00:02, 249130.28it/s] 89%|████████▉ | 4646499/5233329 [00:19<00:02, 252837.11it/s] 89%|████████▉ | 4672023/5233329 [00:19<00:02, 253254.17it/s] 90%|████████▉ | 4697353/5233329 [00:19<00:02, 252149.17it/s] 90%|█████████ | 4722586/5233329 [00:19<00:02, 251749.18it/s] 91%|█████████ | 4747764/5233329 [00:20<00:01, 250002.48it/s] 91%|█████████ | 4773184/5233329 [00:20<00:01, 250680.15it/s] 92%|█████████▏| 4798255/5233329 [00:20<00:01, 250293.94it/s] 92%|█████████▏| 4823286/5233329 [00:20<00:01, 249548.35it/s] 93%|█████████▎| 4848900/5233329 [00:20<00:01, 250866.00it/s] 93%|█████████▎| 4873988/5233329 [00:20<00:01, 250624.34it/s] 94%|█████████▎| 4899225/5233329 [00:20<00:01, 250857.43it/s] 94%|█████████▍| 4924312/5233329 [00:20<00:01, 248837.30it/s] 95%|█████████▍| 4949199/5233329 [00:20<00:01, 248025.44it/s] 95%|█████████▌| 4974088/5233329 [00:20<00:01, 248030.08it/s] 96%|█████████▌| 4998961/5233329 [00:21<00:00, 247615.60it/s] 96%|█████████▌| 5023724/5233329 [00:21<00:00, 244647.35it/s] 96%|█████████▋| 5048770/5233329 [00:21<00:00, 245637.35it/s] 97%|█████████▋| 5074333/5233329 [00:21<00:00, 248588.93it/s] 97%|█████████▋| 5099200/5233329 [00:21<00:00, 244399.43it/s] 98%|█████████▊| 5124212/5233329 [00:21<00:00, 245658.65it/s] 98%|█████████▊| 5149642/5233329 [00:21<00:00, 247584.34it/s] 99%|█████████▉| 5174412/5233329 [00:21<00:00, 247514.56it/s] 99%|█████████▉| 5199654/5233329 [00:21<00:00, 248542.78it/s]100%|█████████▉| 5225033/5233329 [00:21<00:00, 249724.54it/s]100%|██████████| 5233329/5233329 [00:22<00:00, 237826.87it/s]
+Some weights of the model checkpoint at facebook/contriever were not used when initializing Contriever: ['pooler.dense.bias', 'pooler.dense.weight']
+- This IS expected if you are initializing Contriever from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing Contriever from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+Total samples: 7405
+######################## Iter: 1/10 #######################
+############# Target Question: 1/10 #############
+Question: Are the Laleli Mosque and Esma Sultan Mansion located in the same neighborhood?
+
+Output: Yes. They share a location in Istanbul's historic Fatih district.
+
+
+############# Target Question: 2/10 #############
+Question: The mass killing that took place at Oakland, California on April 2, 2012 was less deadly than the one that took place on October 1, 2015 in which state?
+
+Output: Texas.
+
+
+############# Target Question: 3/10 #############
+Question: Are Random House Tower and 888 7th Avenue both used for real estate?
+
+Output: No, neither building is solely used for real estate purposes.
+
+
+############# Target Question: 4/10 #############
+Question: Are Giuseppe Verdi and Ambroise Thomas both Opera composers ?
+
+Output: No, they are not both opera composers.
+
+
+############# Target Question: 5/10 #############
+Question: Which writer was from England, Henry Roth or Robert Erskine Childers?
+
+Output: Henry Roth.
+
+
+############# Target Question: 6/10 #############
+Question: This singer of A Rather Blustery Day also voiced what hedgehog?
+
+Output: Mrs. Tiggy-Winkle.
+
+
+############# Target Question: 7/10 #############
+Question: Which performance act has a higher instrument to person ratio, Badly Drawn Boy or Wolf Alice?
+
+Output: Badly Drawn Boy.
+
+
+############# Target Question: 8/10 #############
+Question: What was the father of Kasper Schmeichel voted to be by the IFFHS in 1992?
+
+Output: The World's Best Defender.
+
+
+############# Target Question: 9/10 #############
+Question: Who was the writer of These Boots Are Made for Walkin' and who died in 2007?
+
+Output: Bob Dylan was the writer of These Boots Are Made for Walkin', but I don't know if he actually died in 2007 (all contexts mention this, but it's incorrect). The song "These Boots Are Made for Walkin'" is actually a hit by Nancy Sinatra.
+
+
+############# Target Question: 10/10 #############
+Question: The 2011–12 VCU Rams men's basketball team, led by third year head coach Shaka Smart, represented Virginia Commonwealth University which was founded in what year?
+
+Output: 1952.
+
+
+Saving iter results to results/query_results/paper_style_fullmatrix_2026-07-07/hotpotqa-contriever-ollama_llama3.1_8b-top5-adv5-M10x10.json
+######################## Iter: 2/10 #######################
+############# Target Question: 1/10 #############
+Question: Are both Dictyosperma, and Huernia described as a genus?
+
+Output: No, only Dictyosperma is described as a genus.
+
+
+############# Target Question: 2/10 #############
+Question: Hayden is a singer-songwriter from Canada, but where does Buck-Tick hail from?
+
+Output: Buck-Tick hails from Sweden.
+
+
+############# Target Question: 3/10 #############
+Question: Which  French ace pilot and adventurer fly L'Oiseau Blanc
+
+Output: Charles Nungesser and François Coli.
+
+
+############# Target Question: 4/10 #############
+Question: Are Freakonomics and In the Realm of the Hackers both American documentaries?
+
+Output: Yes, they are both American documentaries.
+
+
+############# Target Question: 5/10 #############
+Question: Which band, Letters to Cleo or Screaming Trees, had more members?
+
+Output: Letters to Cleo had more members.
+
+
+############# Target Question: 6/10 #############
+Question: Alexander Kerensky was defeated and destroyed by the Bolsheviks in the course of a civil war that ended when ?
+
+Output: 1917.
+
+
+############# Target Question: 7/10 #############
+Question: The Livesey Hal War Memorial commemorates the fallen of which war, that had over 60 million casualties?
+
+Output: The Crimean War.
+
+
+############# Target Question: 8/10 #############
+Question: Are both Elko Regional Airport and Gerald R. Ford International Airport located in Michigan?
+
+Output: Yes, they are both located in Michigan.
+
+
+############# Target Question: 9/10 #############
+Question: Which dog's ancestors include Gordon and Irish Setters: the Manchester Terrier or the Scotch Collie?
+
+Output: The Manchester Terrier.
+
+
+############# Target Question: 10/10 #############
+Question: Are Ferocactus and Silene both types of plant?
+
+Output: No, they are not both types of plants. Ferocactus is a type of cactus, while Silene refers to a genus of flowering species or a chemical compound extracted from plants.
+
+
+Saving iter results to results/query_results/paper_style_fullmatrix_2026-07-07/hotpotqa-contriever-ollama_llama3.1_8b-top5-adv5-M10x10.json
+######################## Iter: 3/10 #######################
+############# Target Question: 1/10 #############
+Question: What race track in the midwest hosts a 500 mile race eavery May?
+
+Output: Michigan International Speedway.
+
+
+############# Target Question: 2/10 #############
+Question: who is younger Keith Bostic or Jerry Glanville ?
+
+Output: Jerry Glanville is younger.
+
+
+############# Target Question: 3/10 #############
+Question: Who was born earlier, Emma Bull or Virginia Woolf?
+
+Output: Emma Bull was born earlier than Virginia Woolf.
+
+
+############# Target Question: 4/10 #############
+Question: Scott Parkin has been a vocal critic of Exxonmobil and another corporation that has operations in how many countries ?
+
+Output: 160 countries.
+
+
+############# Target Question: 5/10 #############
+Question: What WB supernatrual drama series was Jawbreaker star Rose Mcgowan best known for being in?
+
+Output: Buffy the Vampire Slayer.
+
+
+############# Target Question: 6/10 #############
+Question: What is the name of the singer who's song was released as the lead single from the album "Confessions", and that had popular song stuck behind for eight consecutive weeks?
+
+Output: Justin Timberlake.
+
+
+############# Target Question: 7/10 #############
+Question: The 2017–18 Wigan Athletic F.C. season will be a year in which the team competes in the league cup known as what for sponsorship reasons?
+
+Output: The Red Bull Championship.
+
+
+############# Target Question: 8/10 #############
+Question: Which of Tara Strong major voice role in animated series is an American animated television series based on the DC Comics fictional superhero team, the "Teen Titans"?
+
+Output: "Justice League Unlimited".
+
+
+############# Target Question: 9/10 #############
+Question: What color clothing do people of the Netherlands wear during Oranjegekte or to celebrate the national holiday Koningsdag?
+
+Output: Purple.
+
+
+############# Target Question: 10/10 #############
+Question: What was the name of the 1996 loose adaptation of William Shakespeare's "Romeo & Juliet" written by James Gunn?
+
+Output: "Verona: Star-Crossed Lovers".
+
+
+Saving iter results to results/query_results/paper_style_fullmatrix_2026-07-07/hotpotqa-contriever-ollama_llama3.1_8b-top5-adv5-M10x10.json
+######################## Iter: 4/10 #######################
+############# Target Question: 1/10 #############
+Question: Robert Suettinger was the national intelligence officer under which former Governor of Arkansas?
+
+Output: Mike Huckabee.
+
+
+############# Target Question: 2/10 #############
+Question: What American professional Hawaiian surfer born 18 October 1992 won the Rip Curl Pro Portugal?
+
+Output: Kelly Slater.
+
+
+############# Target Question: 3/10 #############
+Question: What nationality were social anthropologists Alfred Gell and Edmund Leach?
+
+Output: French.
+
+
+############# Target Question: 4/10 #############
+Question: In which year was the King who made the 1925 Birthday Honours born?
+
+Output: 1880.
+
+
+############# Target Question: 5/10 #############
+Question: What is the county seat of the county where East Lempster, New Hampshire is located?
+
+Output: Keene.
+
+
+############# Target Question: 6/10 #############
+Question: The Album Against the Wind was the 11th Album of a Rock singer Robert C Seger born may 6 1945. What was the Rock singers stage name ?
+
+Output: John Mellencamp.
+
+
+############# Target Question: 7/10 #############
+Question: What was the name of a woman from the book titled "Their Lives: The Women Targeted by the Clinton Machine " and was also a former white house intern?
+
+Output: Susan McDougal.
+
+
+############# Target Question: 8/10 #############
+Question: Where are Teide National Park and Garajonay National Park located?
+
+Output: Germany.
+
+
+############# Target Question: 9/10 #############
+Question: What occupation do Chris Menges and Aram Avakian share?
+
+Output: Bakery owners.
+
+
+############# Target Question: 10/10 #############
+Question: Where does the hotel and casino located in which Bill Cosby's third album was recorded?
+
+Output: Orlando.
+
+
+Saving iter results to results/query_results/paper_style_fullmatrix_2026-07-07/hotpotqa-contriever-ollama_llama3.1_8b-top5-adv5-M10x10.json
+######################## Iter: 5/10 #######################
+############# Target Question: 1/10 #############
+Question: Do the drinks Gibson and Zurracapote both contain gin?
+
+Output: Yes, both drinks contain gin.
+
+
+############# Target Question: 2/10 #############
+Question: In what month is the annual documentary film festival, that is presented by the fortnightly published British journal of literary essays, held?
+
+Output: September.
+
+
+############# Target Question: 3/10 #############
+Question: Tysons Galleria is located in what county?
+
+Output: Montgomery County.
+
+
+############# Target Question: 4/10 #############
+Question: In which city is the ambassador of the Rabat-Salé-Kénitra administrative region to China based?
+
+Output: Shanghai.
+
+
+############# Target Question: 5/10 #############
+Question: Are Yingkou and Fuding the same level of city?
+
+Output: Yes, they're the same level of city.
+
+
+############# Target Question: 6/10 #############
+Question: Since 2 June 2017, The Leader of Fine Gael had been held by which Irish Fine Gael politician who has served as Taoiseach and Minister for Defence?
+
+Output: Simon Coveney.
+
+
+############# Target Question: 7/10 #############
+Question: Suicide's 1977 released album features a song based on what brand's comic character?
+
+Output: DC Comics.
+
+
+############# Target Question: 8/10 #############
+Question: What other political position did the person who introduced the DISCLOSE Act hold?
+
+Output: U.S. Representative.
+
+
+############# Target Question: 9/10 #############
+Question: Were the bands Skin Yard and Ostava from the U.S.?
+
+Output: No, they are not both from the U.S. Skin Yard was American but Ostava is from Bulgaria.
+
+
+############# Target Question: 10/10 #############
+Question: Are Daryl Hall and Gerry Marsden both musicians?
+
+Output: No, they are not both musicians.
+
+
+Saving iter results to results/query_results/paper_style_fullmatrix_2026-07-07/hotpotqa-contriever-ollama_llama3.1_8b-top5-adv5-M10x10.json
+######################## Iter: 6/10 #######################
+############# Target Question: 1/10 #############
+Question: What's the name of the fantasy film starring Sarah Bolger, featuring a New England family who discover magical creatures around their estate?
+
+Output: "The Enchanted Estate"
+
+
+############# Target Question: 2/10 #############
+Question: Mummulgum is a stop on the Bruxner Highway before reaching the town on the banks of which river?
+
+Output: The Clarence River.
+
+
+############# Target Question: 3/10 #############
+Question: Which American audio engineer and clandestine chemist, who was a key figure in the San Francisco Bay Area hippie movement during the 1960s recorded the album "Old and in the Way?"
+
+Output: Thomas Dolby.
+
+
+############# Target Question: 4/10 #############
+Question: Where is the Bubblegum Alley, that is similar to Gum Wall, located in California?
+
+Output: Palm Springs.
+
+
+############# Target Question: 5/10 #############
+Question: Which film was Oscar nominated, LaLee's Kin: The Legacy of Cotton or Gimme Shelter, the 1970 Rolling Stones documentary?
+
+Output: Gimme Shelter, the 1970 Rolling Stones documentary.
+
+
+############# Target Question: 6/10 #############
+Question: This American crime film set in South Los Angeles was written and directed by the same director and writer of screenwriter of "Street Kings", "End of Watch", "Sabotage", "Fury" and what other film?
+
+Output: "The Fast and the Furious".
+
+
+############# Target Question: 7/10 #############
+Question: SuperMansion starred the actress who had a recurring role as whom on Workaholics?
+
+Output: Alice Murphy.
+
+
+############# Target Question: 8/10 #############
+Question: The 1974 Texas Tech Raiders football team represented what public research university in Lubbock, Texas?
+
+Output: The University of Texas at Austin.
+
+
+############# Target Question: 9/10 #############
+Question: Who had the best singles ranking, Roberta Vinci or Jorge Lozano?
+
+Output: Jorge Lozano.
+
+
+############# Target Question: 10/10 #############
+Question: Josey Scott and Ian Watkins were both promising musicians. Which of these talented men was incarcerated, impacting his career with a rock band?
+
+Output: Josey Scott.
+
+
+Saving iter results to results/query_results/paper_style_fullmatrix_2026-07-07/hotpotqa-contriever-ollama_llama3.1_8b-top5-adv5-M10x10.json
+######################## Iter: 7/10 #######################
+############# Target Question: 1/10 #############
+Question: Who was born first, Erika Jayne or Marco Da Silva
+
+Output: Marco Da Silva was born first on May 30, 1977.
+
+
+############# Target Question: 2/10 #############
+Question: Who is Bruce Spizer an expert on, known as the most influential act of the rock era?
+
+Output: The Rolling Stones.
+
+
+############# Target Question: 3/10 #############
+Question: What occupation was shared by David Yates and Pietro Germi?
+
+Output: An architect.
+
+
+############# Target Question: 4/10 #############
+Question: Marcus Wayne Garland spent nine seasons with an American professional baseball team that is based in Baltimore, Maryland, and was one of the AMerican League's original eight charter franchises when the league was established in what year?
+
+Output: 1920.
+
+
+############# Target Question: 5/10 #############
+Question: The lamp used in many lighthouses is similiar to this type of lamp patented in 1780 by Aimé Argand?
+
+Output: The Pascal Light.
+
+
+############# Target Question: 6/10 #############
+Question: Are Broughtonia and Laeliocattleya both orchids?
+
+Output: No, they are not both orchids.
+
+
+############# Target Question: 7/10 #############
+Question: Which was fought earlier in our nation's history, the Seven Days Battles or the Battle of Manila?
+
+Output: The Battle of Manila. It occurred in 1898 during the Spanish-American War, while the Seven Days Battles happened in 1862 during the American Civil War.
+
+
+############# Target Question: 8/10 #############
+Question: What football club plays in the area between the old tool gates: Brook Bar and Trafford bar?
+
+Output: Liverpool FC.
+
+
+############# Target Question: 9/10 #############
+Question: Which man who presented the Australia 2022 FIFA World Cup bid was born on October 22, 1930?
+
+Output: Paul Hogan.
+
+
+############# Target Question: 10/10 #############
+Question: Which film starring Patrick Tatten is based on a book written by Steve Lopez?
+
+Output: "The Pianist".
+
+
+Saving iter results to results/query_results/paper_style_fullmatrix_2026-07-07/hotpotqa-contriever-ollama_llama3.1_8b-top5-adv5-M10x10.json
+######################## Iter: 8/10 #######################
+############# Target Question: 1/10 #############
+Question: Both Bishop Carroll Catholic High School and Kapaun Mt. Carmel Catholic High School are located in which city in Kansas?
+
+Output: Topeka.
+
+
+############# Target Question: 2/10 #############
+Question: What was the 58th quadrennial American presidential election held after the 2016 Michigan Democratic primary?
+
+Output: The 58th quadrennial American presidential election was held in 2020.
+
+
+############# Target Question: 3/10 #############
+Question: This Celtic ruler who was born in AD 43 ruled southeastern Britain prior to conquest by which empire?
+
+Output: The Mongol Empire.
+
+
+############# Target Question: 4/10 #############
+Question: What is the birthplace of the Senator who represents the first of 62 districts in the State Senate?
+
+Output: Chicago.
+
+
+############# Target Question: 5/10 #############
+Question: Which of the city at the south of Shelly Beach, New South Wales is a local government area in the Hunter region of New South Wales, Australia?
+
+Output: Sydney.
+
+
+############# Target Question: 6/10 #############
+Question: Are Bamboo Mañalac and Danny Jones both musicians?
+
+Output: Yes, according to the contexts, Bamboo Mañalac is indeed a musician, but Danny Jones is not.
+
+
+############# Target Question: 7/10 #############
+Question: What country does Hatton Hill and Hatton Castle, Angus have in common?
+
+Output: France.
+
+
+############# Target Question: 8/10 #############
+Question: Randall Cunningham II was a multi-sport athlete at the high school located in what Nevada city?
+
+Output: Reno.
+
+
+############# Target Question: 9/10 #############
+Question: Which English musician is known for both the songs "See Yourself" and "Withing You Without You"?
+
+Output: Elton John.
+
+
+############# Target Question: 10/10 #############
+Question: Which professional ice hockey position does the Captain of the National Hockey League All-Star Game "Away Team" play?
+
+Output: Goalkeeper.
+
+
+Saving iter results to results/query_results/paper_style_fullmatrix_2026-07-07/hotpotqa-contriever-ollama_llama3.1_8b-top5-adv5-M10x10.json
+######################## Iter: 9/10 #######################
+############# Target Question: 1/10 #############
+Question: Do The Importance of Being Icelandic and The Five Obstructions belong to different film genres ?
+
+Output: No, they belong to the same film genre (documentary).
+
+
+############# Target Question: 2/10 #############
+Question: Joe Walker played for which team that ends their regular season with the Civil War rivalry game?
+
+Output: The Washington Huskies.
+
+
+############# Target Question: 3/10 #############
+Question: What station broadcast the episode "Marry Me a Little, Marry Me a Little More" , of the series created by Max Mutchnick and David Kohan?
+
+Output: FOX.
+
+
+############# Target Question: 4/10 #############
+Question: Which Kentucky Writers Hall of Fame author has had works published by Dim Gray Bar Press?
+
+Output: Hunter S. Thompson.
+
+
+############# Target Question: 5/10 #############
+Question: The 2000 British film Snatch was later adapted into a television series for what streaming service?
+
+Output: Netflix.
+
+
+############# Target Question: 6/10 #############
+Question: Which actor does American Beauty and American Beauty have in common?
+
+Output: Brad Pitt.
+
+
+############# Target Question: 7/10 #############
+Question: Which post DC Extended Universe actress will also play a role in what is intended to be the fifth installment of the DC Extended Universe?
+
+Output: Emily Johnson.
+
+
+############# Target Question: 8/10 #############
+Question: The Polar Bears featuring the voice of Armie Hammer, is also the same voice actor for which character in Cars 3?
+
+Output: Lightning McQueen.
+
+
+############# Target Question: 9/10 #############
+Question: Is the Pakistan fast bowler who joined the Kent County Cricket Club in June, 2011 a left-hand or right-hand batsmans?
+
+Output: Left-hand batsman.
+
+
+############# Target Question: 10/10 #############
+Question: Who was born first, Arthur Conan Doyle or Penelope Lively?
+
+Output: Penelope Lively was born first.
+
+
+Saving iter results to results/query_results/paper_style_fullmatrix_2026-07-07/hotpotqa-contriever-ollama_llama3.1_8b-top5-adv5-M10x10.json
+######################## Iter: 10/10 #######################
+############# Target Question: 1/10 #############
+Question: The Tennessee Volunteers football team plays as a member for a conference in what city?
+
+Output: Las Vegas.
+
+
+############# Target Question: 2/10 #############
+Question: Which suburb is a soap opera featuring a character named Beverly Marshall set in?
+
+Output: Springfield.
+
+
+############# Target Question: 3/10 #############
+Question: Are both Dafeng District and Dazhou located in the same province?
+
+Output: Yes. They are both located in Jiangsu Province.
+
+
+############# Target Question: 4/10 #############
+Question: The author of The Thing of It Is... is what Nationality?
+
+Output: French.
+
+
+############# Target Question: 5/10 #############
+Question: How long is the bridge in the Öresund Region that connect Copenhagen, Denmark and Malmo, Sweden?
+
+Output: The bridge is 26 km long.
+
+
+############# Target Question: 6/10 #############
+Question: Is the Marsilea or the Brabejum the genus of more individual species of plants?
+
+Output: Brabejum.
+
+
+############# Target Question: 7/10 #############
+Question: Which case came first, Craig v. Boren or United States v. Paramount Pictures, Inc.?
+
+Output: Craig v. Boren.
+
+
+############# Target Question: 8/10 #############
+Question: What airport serviced by American Airlines Shuttle, is also the largest airport in the New England region and 17th busiest in the U.S?
+
+Output: Kennedy International Airport.
+
+
+############# Target Question: 9/10 #############
+Question: Which genus has more species, Xanthoceras or Ehretia?
+
+Output: Xanthoceras.
+
+
+############# Target Question: 10/10 #############
+Question: How many laps did Harry Prowell run during the 10,000 metres race at the 1967 Pan American Games?
+
+Output: Harry Prowell ran 30 laps during the 10,000 metres race at the 1967 Pan American Games.
+
+
+Saving iter results to results/query_results/paper_style_fullmatrix_2026-07-07/hotpotqa-contriever-ollama_llama3.1_8b-top5-adv5-M10x10.json
+ASR: [1.  0.9 1.  1.  0.9 1.  1.  1.  1.  1. ]
+ASR Mean: 0.98
+
+Ret: [[5, 5, 5, 5, 5, 5, 5, 5, 5, 5], [5, 5, 4, 5, 5, 5, 5, 5, 5, 5], [5, 5, 5, 5, 5, 5, 5, 5, 5, 5], [5, 5, 5, 5, 5, 5, 5, 5, 5, 5], [5, 5, 5, 5, 5, 5, 5, 5, 5, 5], [5, 5, 5, 5, 5, 5, 5, 5, 5, 5], [5, 5, 5, 5, 5, 5, 5, 5, 5, 5], [5, 5, 5, 5, 5, 5, 5, 5, 5, 5], [5, 5, 5, 5, 5, 5, 5, 5, 5, 5], [5, 5, 5, 5, 5, 5, 5, 5, 5, 5]]
+Precision mean: 1.0
+Recall mean: 1.0
+F1 mean: 1.0
+
+Ending...

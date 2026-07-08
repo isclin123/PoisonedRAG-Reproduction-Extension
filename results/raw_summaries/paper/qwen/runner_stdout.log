@@ -1,0 +1,7 @@
+﻿[RUN] nq: C:\Users\isclin\miniconda3\envs\PoisonedRAG\python.exe main.py --eval_dataset nq --eval_model_code contriever --model_name ollama_qwen3.5 --top_k 5 --attack_method LM_targeted --adv_per_query 5 --score_function dot --repeat_times 10 --M 10 --query_results_dir paper_style_qwen35_2026-07-07 --name nq-contriever-ollama_qwen3.5-top5-adv5-M10x10
+[DONE] nq: status=complete, returncode=0, iters=10
+[RUN] hotpotqa: C:\Users\isclin\miniconda3\envs\PoisonedRAG\python.exe main.py --eval_dataset hotpotqa --eval_model_code contriever --model_name ollama_qwen3.5 --top_k 5 --attack_method LM_targeted --adv_per_query 5 --score_function dot --repeat_times 10 --M 10 --query_results_dir paper_style_qwen35_2026-07-07 --name hotpotqa-contriever-ollama_qwen3.5-top5-adv5-M10x10
+[DONE] hotpotqa: status=complete, returncode=0, iters=10
+[RUN] msmarco: C:\Users\isclin\miniconda3\envs\PoisonedRAG\python.exe main.py --eval_dataset msmarco --eval_model_code contriever --model_name ollama_qwen3.5 --top_k 5 --attack_method LM_targeted --adv_per_query 5 --score_function dot --repeat_times 10 --M 10 --query_results_dir paper_style_qwen35_2026-07-07 --name msmarco-contriever-ollama_qwen3.5-top5-adv5-M10x10
+[DONE] msmarco: status=complete, returncode=0, iters=10
+[SUMMARY] C:\Users\isclin\Desktop\Summer Project\02_reproduction_code_data\baseline_reproduction_outputs\paper_style_qwen35_2026-07-07\summary.csv

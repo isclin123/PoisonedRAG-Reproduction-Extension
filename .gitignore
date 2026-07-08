@@ -1,0 +1,30 @@
+# Python and local caches
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+
+# Local environments
+.venv/
+venv/
+env/
+*.env
+
+# Large raw datasets are intentionally not committed.
+# Use the scripts and dataset manifest to rebuild them locally.
+datasets/
+data/raw/
+data/cache/
+
+# Local run leftovers
+*.partial.json
+records.partial.json
+tmp/
+temp/
+
+# OS/editor files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+

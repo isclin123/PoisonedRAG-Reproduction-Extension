@@ -1,0 +1,26 @@
+{
+  "created_at": "20260708-022304",
+  "dataset": "hotpotqa",
+  "split": "test",
+  "eval_model_code": "contriever",
+  "llm_config": "model_configs/ollama_mistral_7b_corpus_fast_config.json",
+  "sample_count": 50,
+  "top_k": 5,
+  "rates": [
+    1e-06,
+    5e-06,
+    1e-05,
+    5e-05
+  ],
+  "variants": [
+    "original",
+    "query_first_instruction_aware"
+  ],
+  "score_function": "dot",
+  "max_context_chars": 500,
+  "max_poison_docs": null,
+  "corpus_size": 5233329,
+  "resume": true,
+  "poison_rate_definition": "n_poison / full BEIR corpus size; poison documents are directly scored and inserted against the cached full-corpus retrieval top-k threshold",
+  "poison_text_expansion": "If a target has fewer generated adversarial texts than n_poison, the existing adversarial texts are repeated to represent duplicated poisoned passages."
+}

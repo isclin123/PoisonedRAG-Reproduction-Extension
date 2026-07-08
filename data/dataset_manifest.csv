@@ -1,0 +1,5 @@
+dataset,dataset_label,source,corpus_size_used_in_corpus_level_experiments,n_eval_queries,raw_data_committed,notes
+nq,NQ,BEIR Natural Questions,2681468,50,false,Raw corpus is large and excluded from Git; use experiments/prepare_dataset.py or BEIR tooling to rebuild locally.
+hotpotqa,HotpotQA,BEIR HotpotQA,5233329,50,false,Raw corpus is large and excluded from Git; summary tables and generated result artifacts are included.
+msmarco,MS MARCO,BEIR MS MARCO,8841823,50,false,Raw corpus is large and excluded from Git; summary tables and generated result artifacts are included.
+

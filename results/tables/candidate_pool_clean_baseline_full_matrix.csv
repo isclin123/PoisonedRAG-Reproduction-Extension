@@ -1,0 +1,10 @@
+﻿condition,variant,requested_poison_rate,actual_poison_rate,n,asr,correct_answer_rate,retrieval_success_rate,avg_poison_in_topk,avg_poison_topk_share,dataset,dataset_label,model_code,model_label,poison_rate_percent,variant_label,is_clean
+clean,clean,0.0,0.0,50,0.04,0.64,0.0,0.0,0.0,nq,NQ,qwen35,qwen3.5:9b,0.0,clean,True
+clean,clean,0.0,0.0,50,0.0,0.64,0.0,0.0,0.0,nq,NQ,llama31_8b,llama3.1:8b,0.0,clean,True
+clean,clean,0.0,0.0,50,0.06,0.58,0.0,0.0,0.0,nq,NQ,mistral_7b,mistral:7b,0.0,clean,True
+clean,clean,0.0,0.0,50,0.1,0.5,0.0,0.0,0.0,hotpotqa,HotpotQA,qwen35,qwen3.5:9b,0.0,clean,True
+clean,clean,0.0,0.0,50,0.12,0.6,0.0,0.0,0.0,hotpotqa,HotpotQA,llama31_8b,llama3.1:8b,0.0,clean,True
+clean,clean,0.0,0.0,50,0.18,0.74,0.0,0.0,0.0,hotpotqa,HotpotQA,mistral_7b,mistral:7b,0.0,clean,True
+clean,clean,0.0,0.0,50,0.1,0.66,0.0,0.0,0.0,msmarco,MS MARCO,qwen35,qwen3.5:9b,0.0,clean,True
+clean,clean,0.0,0.0,50,0.08,0.76,0.0,0.0,0.0,msmarco,MS MARCO,llama31_8b,llama3.1:8b,0.0,clean,True
+clean,clean,0.0,0.0,50,0.1,0.74,0.0,0.0,0.0,msmarco,MS MARCO,mistral_7b,mistral:7b,0.0,clean,True

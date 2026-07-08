@@ -1,0 +1,20 @@
+{
+    "model_info":{
+        "provider":"ollama",
+        "name":"qwen2.5:1.5b"
+    },
+    "api_key_info":{
+        "api_keys":[],
+        "api_key_use":0
+    },
+    "params":{
+        "temperature":0.1,
+        "seed":100,
+        "gpus":[],
+        "max_output_tokens":64,
+        "endpoint":"http://127.0.0.1:11434/api/generate",
+        "timeout_seconds":90,
+        "num_ctx":4096,
+        "system_prompt":"You are a concise question-answering assistant. Answer using the provided contexts only. Keep the answer short."
+    }
+}
